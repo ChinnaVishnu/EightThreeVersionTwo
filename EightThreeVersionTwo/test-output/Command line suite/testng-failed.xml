@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.jocata.star.MisReports.ReportonPastCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.MisReports.ReportonPastCases -->
+      <class name="com.jocata.star.Administration.UserPermissionsReport">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Administration.UserPermissionsReport -->
+      <class name="com.jocata.star.falsepositive.FalsepositiveCustomerId">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.falsepositive.FalsepositiveCustomerId -->
+      <class name="com.jocata.star.Taskboard.TaskboardPastCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Taskboard.TaskboardPastCases -->
+      <class name="com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleName">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleName -->
+      <class name="com.jocata.star.AddManualEvent.AddManualEventAccountNum">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.AddManualEvent.AddManualEventAccountNum -->
+      <class name="com.jocata.star.MisReports.ReportonCurrentCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.MisReports.ReportonCurrentCases -->
+      <class name="com.jocata.star.AddManualEvent.AddManualEventCustomerid">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.AddManualEvent.AddManualEventCustomerid -->
+      <class name="com.jocata.star.dashboard.DashboardLevelSelection">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.dashboard.DashboardLevelSelection -->
+      <class name="com.jocata.star.Taskboard.SearchForTrancations">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Taskboard.SearchForTrancations -->
+      <class name="com.jocata.star.Taskboard.AccountTrunover">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Taskboard.AccountTrunover -->
+      <class name="com.jocata.star.dashboard.DashboardUserSelection">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.dashboard.DashboardUserSelection -->
+      <class name="com.jocata.star.Administration.SysytemConfigurationFalsePositiveLimits">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Administration.SysytemConfigurationFalsePositiveLimits -->
+      <class name="com.jocata.star.falsepositive.FalsePositiveRuleId">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.falsepositive.FalsePositiveRuleId -->
+      <class name="com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleId">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleId -->
+      <class name="com.jocata.star.RuleBulider.RuleBuliderUpdate">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleBulider.RuleBuliderUpdate -->
+      <class name="com.jocata.star.TaskboardSort.SortOnLastActivivtyDate">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.TaskboardSort.SortOnLastActivivtyDate -->
+      <class name="com.jocata.star.Centra.CentraUpdateSTRDetails">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Centra.CentraUpdateSTRDetails -->
+      <class name="com.jocata.star.RuleLibry.RuleLibraryUpdate">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleLibry.RuleLibraryUpdate -->
+      <class name="com.jocata.star.MisReports.AccountRiskReport">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.MisReports.AccountRiskReport -->
+      <class name="com.jocata.star.Administration.NotificationConfigurationUpdate2">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Administration.NotificationConfigurationUpdate2 -->
+      <class name="com.jocata.star.TaskboardSort.SortOnAmount">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.TaskboardSort.SortOnAmount -->
+      <class name="com.jocata.star.Centra.CentraRegenerateSTR">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Centra.CentraRegenerateSTR -->
+      <class name="com.jocata.MarkerChecker.MakerCheckerApprove">
+        <methods>
+          <include name="getResult"/>
+          <include name="clickmarkApp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.MarkerChecker.MakerCheckerApprove -->
+      <class name="com.jocata.star.RuleSimulation.RuleSimulate3">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleSimulation.RuleSimulate3 -->
+      <class name="com.jocata.TranscationSetails.TrancastionDetails">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.TranscationSetails.TrancastionDetails -->
+      <class name="com.jocata.star.RuleLibry.RuleLibraryAddandDelete">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.RuleLibry.RuleLibraryAddandDelete -->
+      <class name="com.jocata.star.TaskboardSort.SortOnCaseId">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.TaskboardSort.SortOnCaseId -->
+      <class name="com.jocata.star.Centra.CentraReSubmit">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Centra.CentraReSubmit -->
+      <class name="com.jocata.star.TaskboardSort.SortOnBranch">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.TaskboardSort.SortOnBranch -->
+      <class name="com.jocata.star.Centra.CentraViewErrors">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Centra.CentraViewErrors -->
+      <class name="com.jocata.star.Administration.AuditLogModuleName">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.Administration.AuditLogModuleName -->
+      <class name="com.jocata.star.falsepositive.FalsePositiveAddby">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.falsepositive.FalsePositiveAddby -->
+      <class name="com.jocata.star.TaskboardSort.SortOnLastUpdateddate">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.TaskboardSort.SortOnLastUpdateddate -->
+      <class name="com.jocata.star.falsepositive.FalsePositiveUpdate">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.falsepositive.FalsePositiveUpdate -->
+      <class name="com.jocata.MarkerChecker.MakerCheckerRejected">
+        <methods>
+          <include name="clickmarkApp"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.MarkerChecker.MakerCheckerRejected -->
+      <class name="com.jocata.star.dashboard.DashboardWorkFlowDrillDown">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.dashboard.DashboardWorkFlowDrillDown -->
+      <class name="com.jocata.star.dashboard.DashboardAgeingDrillDown">
+        <methods>
+          <include name="fristlogin"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jocata.star.dashboard.DashboardAgeingDrillDown -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,433 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 20 17:38:30 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>2010 seconds (2010540 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jocata.MarkerChecker.MakerCheckerApprove.clickmarkApp()'><b>clickmarkApp</b><br>Test class: com.jocata.MarkerChecker.MakerCheckerApprove</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Administration&apos;]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 52094ced-463d-4942-8d54-525f9ad9ce36
+*** Element info: {Using=xpath, value=//span[text()=&apos;Administration&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.jocata.MarkerChecker.MakerCheckerApprove.clickingAnalayast(MakerCheckerApprove.java:275)
+	at com.jocata.MarkerChecker.MakerCheckerApprove.clickmarkApp(MakerCheckerApprove.java:66)
+	at com.jocata.star.RunStar.AllStarNewSevenone.main(AllStarNewSevenone.java:142)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Administration&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace368153528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace368153528'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Administration&apos;]&quot;}
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 52094ced-463d-4942-8d54-525f9ad9ce36
+*** Element info: {Using=xpath, value=//span[text()=&apos;Administration&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.jocata.MarkerChecker.MakerCheckerApprove.clickingAnalayast(MakerCheckerApprove.java:275)
+	at com.jocata.MarkerChecker.MakerCheckerApprove.clickmarkApp(MakerCheckerApprove.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at com.jocata.star.RunStar.AllStarNewSevenone.main(AllStarNewSevenone.java:142)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Administration&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>65</td>
+<td>com.jocata.MarkerChecker.MakerCheckerApprove@33e5ccce</td></tr>
+<tr>
+<td title='com.jocata.MarkerChecker.MakerCheckerRejected.clickmarkApp()'><b>clickmarkApp</b><br>Test class: com.jocata.MarkerChecker.MakerCheckerRejected</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;flip&apos;]/img&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 52094ced-463d-4942-8d54-525f9ad9ce36
+*** Element info: {Using=xpath, value=//div[@id=&apos;flip&apos;]/img}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.jocata.MarkerChecker.MakerCheckerRejected.clickMakerchecker(MakerCheckerRejected.java:76)
+	at com.jocata.MarkerChecker.MakerCheckerRejected.clickmarkApp(MakerCheckerRejected.java:64)
+	at com.jocata.star.RunStar.AllStarNewSevenone.main(AllStarNewSevenone.java:142)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;flip&apos;]/img&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038988454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038988454'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;flip&apos;]/img&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 52094ced-463d-4942-8d54-525f9ad9ce36
+*** Element info: {Using=xpath, value=//div[@id=&apos;flip&apos;]/img}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.jocata.MarkerChecker.MakerCheckerRejected.clickMakerchecker(MakerCheckerRejected.java:76)
+	at com.jocata.MarkerChecker.MakerCheckerRejected.clickmarkApp(MakerCheckerRejected.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at com.jocata.star.RunStar.AllStarNewSevenone.main(AllStarNewSevenone.java:142)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;flip&apos;]/img&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Raghu-PC&apos;, ip: &apos;192.168.1.89&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Raghu/AppData/Local/Temp/anonymous1535220035085139018webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>30</td>
+<td>com.jocata.MarkerChecker.MakerCheckerRejected@5a42bbf4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jocata.star.MisReports.AccountRiskReport.addReport()'><b>addReport</b><br>Test class: com.jocata.star.MisReports.AccountRiskReport</td>
+<td></td>
+<td>74</td>
+<td>com.jocata.star.MisReports.AccountRiskReport@65e579dc</td></tr>
+<tr>
+<td title='com.jocata.star.MisReports.ReportonCurrentCases.addReport()'><b>addReport</b><br>Test class: com.jocata.star.MisReports.ReportonCurrentCases</td>
+<td></td>
+<td>66</td>
+<td>com.jocata.star.MisReports.ReportonCurrentCases@61baa894</td></tr>
+<tr>
+<td title='com.jocata.star.MisReports.ReportonPastCases.addReport()'><b>addReport</b><br>Test class: com.jocata.star.MisReports.ReportonPastCases</td>
+<td></td>
+<td>66</td>
+<td>com.jocata.star.MisReports.ReportonPastCases@b065c63</td></tr>
+<tr>
+<td title='com.jocata.star.RuleSimulation.RuleSimulate3.clickRulesimualtes()'><b>clickRulesimualtes</b><br>Test class: com.jocata.star.RuleSimulation.RuleSimulate3</td>
+<td></td>
+<td>77</td>
+<td>com.jocata.star.RuleSimulation.RuleSimulate3@27082746</td></tr>
+<tr>
+<td title='com.jocata.star.Centra.CentraViewErrors.clickViewErrors()'><b>clickViewErrors</b><br>Test class: com.jocata.star.Centra.CentraViewErrors</td>
+<td></td>
+<td>71</td>
+<td>com.jocata.star.Centra.CentraViewErrors@66133adc</td></tr>
+<tr>
+<td title='com.jocata.star.TaskboardSort.SortOnAmount.clickcaseid()'><b>clickcaseid</b><br>Test class: com.jocata.star.TaskboardSort.SortOnAmount</td>
+<td></td>
+<td>83</td>
+<td>com.jocata.star.TaskboardSort.SortOnAmount@6c629d6e</td></tr>
+<tr>
+<td title='com.jocata.star.TaskboardSort.SortOnBranch.clickcaseid()'><b>clickcaseid</b><br>Test class: com.jocata.star.TaskboardSort.SortOnBranch</td>
+<td></td>
+<td>66</td>
+<td>com.jocata.star.TaskboardSort.SortOnBranch@5ecddf8f</td></tr>
+<tr>
+<td title='com.jocata.star.TaskboardSort.SortOnCaseId.clickcaseid()'><b>clickcaseid</b><br>Test class: com.jocata.star.TaskboardSort.SortOnCaseId</td>
+<td></td>
+<td>62</td>
+<td>com.jocata.star.TaskboardSort.SortOnCaseId@3f102e87</td></tr>
+<tr>
+<td title='com.jocata.star.Taskboard.AccountTrunover.clickcaseid()'><b>clickcaseid</b><br>Test class: com.jocata.star.Taskboard.AccountTrunover</td>
+<td></td>
+<td>71</td>
+<td>com.jocata.star.Taskboard.AccountTrunover@51016012</td></tr>
+<tr>
+<td title='com.jocata.star.Taskboard.SearchForTrancations.clickcaseid()'><b>clickcaseid</b><br>Test class: com.jocata.star.Taskboard.SearchForTrancations</td>
+<td></td>
+<td>101</td>
+<td>com.jocata.star.Taskboard.SearchForTrancations@29444d75</td></tr>
+<tr>
+<td title='com.jocata.star.Centra.CentraUpdateSTRDetails.clickcentra()'><b>clickcentra</b><br>Test class: com.jocata.star.Centra.CentraUpdateSTRDetails</td>
+<td></td>
+<td>39</td>
+<td>com.jocata.star.Centra.CentraUpdateSTRDetails@7bfcd12c</td></tr>
+<tr>
+<td title='com.jocata.star.AddManualEvent.AddManualEventAccountNum.clickmanualEventAccountNum()'><b>clickmanualEventAccountNum</b><br>Test class: com.jocata.star.AddManualEvent.AddManualEventAccountNum</td>
+<td></td>
+<td>57</td>
+<td>com.jocata.star.AddManualEvent.AddManualEventAccountNum@60215eee</td></tr>
+<tr>
+<td title='com.jocata.star.AddManualEvent.AddManualEventCustomerid.clickmanualevent()'><b>clickmanualevent</b><br>Test class: com.jocata.star.AddManualEvent.AddManualEventCustomerid</td>
+<td></td>
+<td>45</td>
+<td>com.jocata.star.AddManualEvent.AddManualEventCustomerid@4ca8195f</td></tr>
+<tr>
+<td title='com.jocata.star.Administration.SysytemConfigurationFalsePositiveLimits.clicknotification()'><b>clicknotification</b><br>Test class: com.jocata.star.Administration.SysytemConfigurationFalsePositiveLimits</td>
+<td></td>
+<td>25</td>
+<td>com.jocata.star.Administration.SysytemConfigurationFalsePositiveLimits@46f5f779</td></tr>
+<tr>
+<td title='com.jocata.star.Administration.NotificationConfigurationUpdate2.clicknotification()'><b>clicknotification</b><br>Test class: com.jocata.star.Administration.NotificationConfigurationUpdate2</td>
+<td></td>
+<td>72</td>
+<td>com.jocata.star.Administration.NotificationConfigurationUpdate2@1c2c22f3</td></tr>
+<tr>
+<td title='com.jocata.star.Administration.AuditLogModuleName.clickonAuditlogmodulename()'><b>clickonAuditlogmodulename</b><br>Test class: com.jocata.star.Administration.AuditLogModuleName</td>
+<td></td>
+<td>55</td>
+<td>com.jocata.star.Administration.AuditLogModuleName@5b1d2887</td></tr>
+<tr>
+<td title='com.jocata.star.TaskboardSort.SortOnLastActivivtyDate.clickonSortonLastupdate()'><b>clickonSortonLastupdate</b><br>Test class: com.jocata.star.TaskboardSort.SortOnLastActivivtyDate</td>
+<td></td>
+<td>82</td>
+<td>com.jocata.star.TaskboardSort.SortOnLastActivivtyDate@27abe2cd</td></tr>
+<tr>
+<td title='com.jocata.star.TaskboardSort.SortOnLastUpdateddate.clickonSortonLastupdate()'><b>clickonSortonLastupdate</b><br>Test class: com.jocata.star.TaskboardSort.SortOnLastUpdateddate</td>
+<td></td>
+<td>79</td>
+<td>com.jocata.star.TaskboardSort.SortOnLastUpdateddate@5f5a92bb</td></tr>
+<tr>
+<td title='com.jocata.star.Taskboard.TaskboardPastCases.clickpastcases()'><b>clickpastcases</b><br>Test class: com.jocata.star.Taskboard.TaskboardPastCases</td>
+<td></td>
+<td>18</td>
+<td>com.jocata.star.Taskboard.TaskboardPastCases@6fdb1f78</td></tr>
+<tr>
+<td title='com.jocata.star.Centra.CentraRegenerateSTR.clickregeranteStr()'><b>clickregeranteStr</b><br>Test class: com.jocata.star.Centra.CentraRegenerateSTR</td>
+<td></td>
+<td>23</td>
+<td>com.jocata.star.Centra.CentraRegenerateSTR@42f30e0a</td></tr>
+<tr>
+<td title='com.jocata.star.Centra.CentraReSubmit.clickregeranteStr()'><b>clickregeranteStr</b><br>Test class: com.jocata.star.Centra.CentraReSubmit</td>
+<td></td>
+<td>51</td>
+<td>com.jocata.star.Centra.CentraReSubmit@24273305</td></tr>
+<tr>
+<td title='com.jocata.star.Administration.UserPermissionsReport.clickriskconfigrationedit()'><b>clickriskconfigrationedit</b><br>Test class: com.jocata.star.Administration.UserPermissionsReport</td>
+<td></td>
+<td>145</td>
+<td>com.jocata.star.Administration.UserPermissionsReport@270421f5</td></tr>
+<tr>
+<td title='com.jocata.star.RuleBulider.RuleBuliderUpdate.clickrulebuliderupdate()'><b>clickrulebuliderupdate</b><br>Test class: com.jocata.star.RuleBulider.RuleBuliderUpdate</td>
+<td></td>
+<td>89</td>
+<td>com.jocata.star.RuleBulider.RuleBuliderUpdate@768debd</td></tr>
+<tr>
+<td title='com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleName.deletebenchmark()'><b>deletebenchmark</b><br>Test class: com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleName</td>
+<td></td>
+<td>19</td>
+<td>com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleName@490d6c15</td></tr>
+<tr>
+<td title='com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleId.deletebenchmark()'><b>deletebenchmark</b><br>Test class: com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleId</td>
+<td></td>
+<td>10</td>
+<td>com.jocata.star.RuleLibry.RuleLibrarySearchwithRuleId@7d4793a8</td></tr>
+<tr>
+<td title='com.jocata.star.RuleLibry.RuleLibraryUpdate.deletebenchmark()'><b>deletebenchmark</b><br>Test class: com.jocata.star.RuleLibry.RuleLibraryUpdate</td>
+<td></td>
+<td>23</td>
+<td>com.jocata.star.RuleLibry.RuleLibraryUpdate@449b2d27</td></tr>
+<tr>
+<td title='com.jocata.star.RuleLibry.RuleLibraryAddandDelete.deletebenchmark()'><b>deletebenchmark</b><br>Test class: com.jocata.star.RuleLibry.RuleLibraryAddandDelete</td>
+<td></td>
+<td>119</td>
+<td>com.jocata.star.RuleLibry.RuleLibraryAddandDelete@5479e3f</td></tr>
+<tr>
+<td title='com.jocata.TranscationSetails.TrancastionDetails.logintranscationdetails()'><b>logintranscationdetails</b><br>Test class: com.jocata.TranscationSetails.TrancastionDetails</td>
+<td></td>
+<td>53</td>
+<td>com.jocata.TranscationSetails.TrancastionDetails@18e8568</td></tr>
+<tr>
+<td title='com.jocata.star.dashboard.DashboardWorkFlowDrillDown.test()'><b>test</b><br>Test class: com.jocata.star.dashboard.DashboardWorkFlowDrillDown</td>
+<td></td>
+<td>27</td>
+<td>com.jocata.star.dashboard.DashboardWorkFlowDrillDown@574caa3f</td></tr>
+<tr>
+<td title='com.jocata.star.dashboard.DashboardLevelSelection.test()'><b>test</b><br>Test class: com.jocata.star.dashboard.DashboardLevelSelection</td>
+<td></td>
+<td>16</td>
+<td>com.jocata.star.dashboard.DashboardLevelSelection@64cee07</td></tr>
+<tr>
+<td title='com.jocata.star.dashboard.DashboardUserSelection.test()'><b>test</b><br>Test class: com.jocata.star.dashboard.DashboardUserSelection</td>
+<td></td>
+<td>9</td>
+<td>com.jocata.star.dashboard.DashboardUserSelection@1761e840</td></tr>
+<tr>
+<td title='com.jocata.star.dashboard.DashboardAgeingDrillDown.testlevel()'><b>testlevel</b><br>Test class: com.jocata.star.dashboard.DashboardAgeingDrillDown</td>
+<td></td>
+<td>27</td>
+<td>com.jocata.star.dashboard.DashboardAgeingDrillDown@6842775d</td></tr>
+<tr>
+<td title='com.jocata.star.falsepositive.FalsePositiveAddby.testprofiles()'><b>testprofiles</b><br>Test class: com.jocata.star.falsepositive.FalsePositiveAddby</td>
+<td></td>
+<td>16</td>
+<td>com.jocata.star.falsepositive.FalsePositiveAddby@2280cdac</td></tr>
+<tr>
+<td title='com.jocata.star.falsepositive.FalsepositiveCustomerId.testprofiles()'><b>testprofiles</b><br>Test class: com.jocata.star.falsepositive.FalsepositiveCustomerId</td>
+<td></td>
+<td>15</td>
+<td>com.jocata.star.falsepositive.FalsepositiveCustomerId@1517365b</td></tr>
+<tr>
+<td title='com.jocata.star.falsepositive.FalsePositiveRuleId.testprofiles()'><b>testprofiles</b><br>Test class: com.jocata.star.falsepositive.FalsePositiveRuleId</td>
+<td></td>
+<td>16</td>
+<td>com.jocata.star.falsepositive.FalsePositiveRuleId@4fccd51b</td></tr>
+<tr>
+<td title='com.jocata.star.falsepositive.FalsePositiveUpdate.testprofiles()'><b>testprofiles</b><br>Test class: com.jocata.star.falsepositive.FalsePositiveUpdate</td>
+<td></td>
+<td>24</td>
+<td>com.jocata.star.falsepositive.FalsePositiveUpdate@44e81672</td></tr>
+</table><p>
+</body>
+</html>
